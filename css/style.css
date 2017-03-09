@@ -23,7 +23,7 @@ g {
 	transform-origin: 50% 50%;
 	stroke-dasharray: 0;
 	stroke-dashoffset: 0;
-	animation: contours 4s infinite linear;
+	animation: contours 10s infinite linear;
 }
 
 @keyframes tourner {
@@ -37,14 +37,22 @@ g {
 
 @keyframes contours {
 	from {
-		stroke-dasharray:1000;
+		stroke-dasharray:500;
+	}
+
+	25% {
+		stroke-dasharray:250;
 	}
 
 	50% {
-		stroke-dasharray:0;
+		stroke-dasharray:100;
+	}
+
+	75% {
+		stroke-dasharray:250;
 	}
 
 	to {
-		stroke-dasharray:1000;
+		stroke-dasharray:500;
 	}
 }
