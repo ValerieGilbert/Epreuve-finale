@@ -8,10 +8,23 @@ svg {
 	fill:red;
 	/*stroke:DarkBlue;
 	stroke-width:3px;*/
+	animation: tourner 4s infinite linear;
+	transform-origin: 50% 50%;
 }
 
 .oval {
 	fill:Chartreuse;
 	/*stroke:DarkBlue;
 	stroke-width:3px;*/
+	animation: tourner 4s infinite linear;
+	transform-origin: 50% 50%;
+}
+
+@keyframes tourner {
+	from { 
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
