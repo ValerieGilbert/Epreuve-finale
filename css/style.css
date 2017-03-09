@@ -8,16 +8,22 @@ svg {
 	fill:red;
 	stroke:DarkBlue;
 	stroke-width:4px;
-	animation: tourner 4s infinite linear;
 	transform-origin: 50% 50%;
+}
+
+g {
+	transform-origin: 50% 50%;
+	animation: tourner 4s infinite linear;
 }
 
 .oval {
 	fill:Chartreuse;
 	stroke:DarkBlue;
 	stroke-width:4px;
-	animation: tourner 4s infinite linear;
 	transform-origin: 50% 50%;
+	stroke-dasharray: 0;
+	stroke-dashoffset: 0;
+	animation: contours 4s infinite linear;
 }
 
 @keyframes tourner {
@@ -30,5 +36,15 @@ svg {
 }
 
 @keyframes contours {
-	
+	from {
+		stroke-dasharray:1000;
+	}
+
+	50% {
+		stroke-dasharray:0;
+	}
+
+	to {
+		stroke-dasharray:1000;
+	}
 }
