@@ -1,0 +1,17 @@
+svg {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+#cercle {
+	fill:red;
+	/*stroke:DarkBlue;
+	stroke-width:3px;*/
+}
+
+.oval {
+	fill:Chartreuse;
+	/*stroke:DarkBlue;
+	stroke-width:3px;*/
+}

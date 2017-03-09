@@ -3,15 +3,19 @@
 <html>
 <head>
 	<title>Épreuve finale volet 1</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<svg height="200" width="200">
-	  <ellipse cx="100" cy="100" rx="50" ry="50"
-	  style="fill:red;"/>
-	  <ellipse cx="100" cy="100" rx="15" ry="80"
-		  style="fill:Chartreuse;"/>
-	  <ellipse cx="100" cy="100" rx="80" ry="15"
-		  style="fill:Chartreuse;"/>
+	<svg height="500" width="700">
+		<g id="forme">
+		  <circle id="cercle" cx="350" cy="100" r="50" />
+		  <ellipse class="oval" cx="350" cy="100" rx="15" ry="80"/>
+		  <ellipse class="oval" cx="350" cy="100" rx="80" ry="15"/>
+		</g>
+
+		<use x="-220" y="110" xlink:href="#forme"/>
+		<use x="220" y="110" xlink:href="#forme"/>
+		<use x="0" y="270" xlink:href="#forme"/>
 	</svg>
 </body>
 </html>
