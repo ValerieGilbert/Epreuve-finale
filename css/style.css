@@ -42,23 +42,8 @@ g {
 		stroke-dashoffset: 0;
 	}
 
-	25% {
-		stroke-dasharray:250;
-		stroke-dashoffset: 0;
-	}
-
-	50% {
-		stroke-dasharray:100;
-		stroke-dashoffset: 0;
-	}
-
-	75% {
-		stroke-dasharray:250;
-		stroke-dashoffset: 0;
-	}
-
 	to {
-		stroke-dasharray:500;
-		stroke-dashoffset: 0;
+		stroke-dasharray:250;
+		stroke-dashoffset: 500;
 	}
 }
