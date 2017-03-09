@@ -6,16 +6,16 @@ svg {
 
 #cercle {
 	fill:red;
-	/*stroke:DarkBlue;
-	stroke-width:3px;*/
+	stroke:DarkBlue;
+	stroke-width:4px;
 	animation: tourner 4s infinite linear;
 	transform-origin: 50% 50%;
 }
 
 .oval {
 	fill:Chartreuse;
-	/*stroke:DarkBlue;
-	stroke-width:3px;*/
+	stroke:DarkBlue;
+	stroke-width:4px;
 	animation: tourner 4s infinite linear;
 	transform-origin: 50% 50%;
 }
@@ -27,4 +27,8 @@ svg {
 	to {
 		transform: rotate(360deg);
 	}
+}
+
+@keyframes contours {
+	
 }
